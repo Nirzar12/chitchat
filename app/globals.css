@@ -1,11 +1,16 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "tailwindcss/preflight"
-/* @tailwind base;
+@import "tailwindcss/preflight" /* @tailwind base;
 @tailwind components; */
-@tailwind utilities;
+  @tailwind utilities;
 
 @custom-variant dark (&:is(.dark *));
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -115,7 +120,6 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.488 0.243 264.376);
 }
-
 
 @layer base {
   * {
