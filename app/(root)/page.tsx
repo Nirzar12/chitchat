@@ -8,7 +8,8 @@ export default function Home() {
   console.log("User ID from Clerk:", data);
   return (
     <>
-      <div className="w-full h-full flex flex-col items-center justify-center ">
+      <div className="">
+        <h1>Root - page.tsx</h1>
         <div>You are signed in as: {data.userId}</div>
       <UserButton />
       </div>
